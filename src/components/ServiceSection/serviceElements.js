@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 
 export const ServicesContainer = styled.div`
-  /* height: 800px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #016060;
+  background: #005557;
   padding: 100px 0;
 `
 

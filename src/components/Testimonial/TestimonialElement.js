@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const TestimonialContainer = styled.div`
   padding: 100px 0;
-  background: #016060;
+  background: #005557;
 `
 
 export const TestimonialWrap = styled.div`
