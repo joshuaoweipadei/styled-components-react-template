@@ -1,7 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Styled Components React Template 
 
+### Screenshots
+![Screenshot 1](screenshot1.png)
+
+![Screenshot 2](screenshot1.png)
 
 ### Setup
 
