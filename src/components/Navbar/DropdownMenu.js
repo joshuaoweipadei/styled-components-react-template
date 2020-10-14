@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { AiOutlineArrowLeft } from 'react-icons/ai'
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
 import { SiLinewebtoon, SiSemanticweb } from 'react-icons/si'
 import { GiPlantsAndAnimals } from 'react-icons/gi'
 import { CSSTransition } from 'react-transition-group';
@@ -21,8 +21,11 @@ function DropdownMenu() {
   function DropdownItem(props) {
     return (
       <a href="#!" className="menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
-        {props.leftIcon && <span className="icon-button-left">{props.leftIcon}</span>}
-        {props.children}
+        <span className="menu-link">
+          {props.leftIcon && <span className="icon-button-left">{props.leftIcon}</span>}
+          {props.children}
+        </span>
+        {props.rightIcon && <span className="icon-button-right">{props.rightIcon}</span>}
       </a>
     );
   }
@@ -45,11 +48,13 @@ function DropdownMenu() {
           </DropdownItem>
           <DropdownItem
             leftIcon={<SiSemanticweb className="icon" />}
+            rightIcon={<AiOutlineArrowRight className="icon" />}
             goToMenu="skills">
             Skills
           </DropdownItem>
           <DropdownItem
             leftIcon={<GiPlantsAndAnimals className="icon" />}
+            rightIcon={<AiOutlineArrowRight className="icon" />}
             goToMenu="animals">
             Animals
           </DropdownItem>
